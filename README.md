@@ -1,6 +1,6 @@
-#  Solana Transaction Parser
+#  Solana Transaction Parser — Rust Terminal Tool
 
-A terminal tool built in **Rust** that fetches and decodes raw Solana transactions via RPC, no explorer needed. It works by passing any transaction signature and get a fully human-readable breakdown of accounts, instructions, programs called and balance changes.
+A terminal tool built in **Rust** that fetches and decodes raw Solana transactions via RPC by providing only transaction signature, no explorer needed. It works by passing any mainnet or devnet transaction signature and get a fully human-readable breakdown of accounts, instructions, programs called and balance changes.
 
 ---
 
@@ -122,17 +122,3 @@ cargo run -- 2CdTDMTHeTKyTaVQJyUMBtHoNSAfPrNFNLtDeEKgFWJr3JXdCHvbFuPELbDamNhMGSM
 
 ---
 
-## Tech Stack
-
-| Tool | Purpose |
-|------|---------|
-| [Rust](https://www.rust-lang.org/) | Language |
-| [solana-client](https://docs.rs/solana-client) | RPC connection |
-| [solana-sdk](https://docs.rs/solana-sdk) | Core Solana types |
-| [solana-transaction-status](https://docs.rs/solana-transaction-status) | Transaction decoding |
-| [clap](https://docs.rs/clap) | CLI argument parsing |
-| [colored](https://docs.rs/colored) | Terminal colors |
-| [bs58](https://docs.rs/bs58) | Base58 decoding |
-| [tokio](https://tokio.rs/) | Async runtime |
-
----
